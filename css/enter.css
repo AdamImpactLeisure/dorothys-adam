@@ -1,0 +1,213 @@
+
+#enter{
+  position: relative;
+  z-index: 1001;
+  opacity: 1;
+  transition:opacity 2s;
+}
+#page-content{
+  opacity: 0;
+  transition:opacity 2s;
+
+}
+/*Changing color animation*/
+.css-selector {
+    background-image: linear-gradient(334deg, #89aad4, #AD75E9, #e18bf0, #C0F8FF);
+    background-size: 300% 300%;
+
+    -webkit-animation: button-color 6s ease infinite;
+    -moz-animation: button-color 6s ease infinite;
+    -o-animation: button-color 6s ease infinite;
+    animation: button-color 6s ease infinite;
+}
+
+@-webkit-keyframes button-color {
+    0% {
+        background-position: 26% 0
+    }
+    50% {
+        background-position: 75% 100%
+    }
+    100% {
+        background-position: 26% 0
+    }
+}
+
+@-moz-keyframes button-color {
+    0% {
+        background-position: 26% 0
+    }
+    50% {
+        background-position: 75% 100%
+    }
+    100% {
+        background-position: 26% 0
+    }
+}
+
+@-o-keyframes button-color {
+    0% {
+        background-position: 26% 0
+    }
+    50% {
+        background-position: 75% 100%
+    }
+    100% {
+        background-position: 26% 0
+    }
+}
+
+@keyframes button-color {
+    0% {
+        background-position: 26% 0
+    }
+    50% {
+        background-position: 75% 100%
+    }
+    100% {
+        background-position: 26% 0
+    }
+}
+/*End of animation*/
+
+/*VIDEO */
+.myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    opacity: 100%;
+    /*filter: brightness(81%);*/
+    object-fit: cover;
+}
+
+.large {
+    display: none
+}
+
+.medium {
+    display: none
+}
+
+.small {
+    display: none
+}
+
+.smallest {
+    display: none;
+}
+
+@media (min-width: 1500px) {
+    .large {
+        display: block;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 1500px) {
+    .medium {
+        display: block;
+    }
+}
+
+@media (max-width: 780px) {
+    .small {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .smallest {
+        display: block;
+    }
+}
+/*END OF VIDEO*/
+
+
+/******************** BUTTON **********************/
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button1 {
+    min-width: 165px;
+    min-height: 53px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #FFFFff;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgb(237, 164, 245);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: fixed !important;
+    top: 76%;
+    padding: 10px;
+}
+
+.button1::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(165px + 12px);
+    min-height: calc(53px + 12px);
+    border: 8px solid #C2F9FB;
+    box-shadow: 0 0 60px #83EFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+}
+
+.button1:hover, .button1:focus {
+    color: #83EFFF;
+    transform: translateY(-6px);
+}
+
+.button1:hover::before, .button1:focus::before {
+    opacity: 1;
+}
+
+.button1::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 6px solid #ECFBFF;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+}
+
+.button1:hover::after, .button1:focus::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 30px;
+        height: 30px;
+        opacity: 1;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}
+/*END BUTTON & BUTTON ANIMATION */
