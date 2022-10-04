@@ -447,6 +447,9 @@ body{overflow: hidden !important}
     width: 600% !important;
     bottom: 18.5%;
   }
+  .main-section{
+    height: 100vh !important;
+  }
 }
 
 @media (min-width: 387px) and (max-width: 398.99px) {
@@ -462,6 +465,9 @@ body{overflow: hidden !important}
     width: 500% !important;
     bottom: 20.5%;
   }
+  .main-section{
+    height: 100vh !important;
+  }
 }
 
 @media (min-width: 399px) and (max-width: 414.99px) {
@@ -473,6 +479,9 @@ body{overflow: hidden !important}
   .spotlight-1 {
     width: 480% !important;
     bottom: 20.5%;
+  }
+  .main-section{
+    height: 100vh !important;
   }
 }
 
@@ -490,6 +499,9 @@ body{overflow: hidden !important}
     width: 480% !important;
     bottom: 22.5%;
   }
+  .main-section{
+    height: 100vh !important;
+  }
 }
 
 @media (min-width: 438px) and (max-width: 488.99px) {
@@ -501,6 +513,9 @@ body{overflow: hidden !important}
   .spotlight-1 {
     width: 340% !important;
     bottom: 22%;
+  }
+  .main-section{
+    height: 100vh !important;
   }
 }
 
