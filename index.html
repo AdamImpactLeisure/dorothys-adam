@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/enter.css">
+  <script src="https://kit.fontawesome.com/8c3a9c203d.js" crossorigin="anonymous"></script>
+
+
   <!-- FAV-ICON -->
   <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
@@ -36,7 +40,7 @@
     content=" Your very own drag showbar, we are bringing you a divine line-up of resident drag queens ready to entertain you all week long PLUS the best music to soundtrack your night! Open till late all week with VIP packages available to book.">
   <meta property="twitter:image" content="https://i.ibb.co/svYsSzk/meta-picture.jpg">
   <!-- Canonical link tag -->
-  <link rel="canonical" href="https://adamimpactleisure.github.io/ella-design-dorothys/"/>
+  <link rel="canonical" href="https://adamimpactleisure.github.io/ella-design-dorothys/" />
   <!-- Google search console -->
   <meta name="google-site-verification" content="jCUbK4OxjLEH81D4fv2XXR9VaVzrM2Y3mW8h3CfYCAs" />
 </head>
@@ -74,7 +78,7 @@
     </div>
 
     <section class="section-main">
-       <!-- particles -->
+      <!-- particles -->
       <div id="particles-js"></div>
       <div style="position:absolute">
         <img class="curtain-img noselect " src="images/curtain-min.png" alt="Drag showbar curtain">
@@ -205,25 +209,39 @@
         </div>
       </div>
 
-      <div class=" container" id="down">
+      <div class="container" id="down">
         <h1 class="white text-center michland up ">Let us introduce ourselves...</h1>
         <p class="white text-center impact to-upper">we are your very own drag showbar,</p>
         <p class="white text-center impact to-upper">we bring you a divine line up of resident drag queens ready to entertain you!</p>
         <p class="white text-center impact to-upper">now, choose a dot's that intrigues you..</p>
       </div>
-      <div class="row">
-        <div class="col-sm text-center">
-          <a href="liverpool">
-            <img class="card1" src="images/liverpool-card-min.png" alt="Dorothys Showbar logo in a frame with lights around it, Liverpool logo ">
-          </a>
+      <div id="big-screen">
+        <div class="row">
+          <div class="col-sm text-center">
+            <a href="liverpool">
+              <img class="card1" src="images/liverpool-card-min.png" alt="Dorothys Showbar logo in a frame with lights around it, Liverpool logo ">
+            </a>
+          </div>
+          <div class="col-sm text-center">
+            <a href="swansea">
+              <img class="card2" src="images/swansea-card-min.png" alt="Dorothys Showbar logo in a frame with lights around it, Swansea logo">
+            </a>
+          </div>
         </div>
-        <div class="col-sm text-center queen-div">
-          <img class='queen' onmouseover="changeQueen()" src="images/queen-cards.png" alt="">
-        </div>
-        <div class="col-sm text-center">
-          <a href="swansea">
-            <img class="card2" src="images/swansea-card-min.png" alt="Dorothys Showbar logo in a frame with lights around it, Swansea logo">
-          </a>
+      </div>
+      <div id="mobile-screen">
+        <div class="items">
+          <div class="item active">
+            <a href="https://yahoo.com"><img src="https://i.ibb.co/mCfTJSN/liverpool-card-min.png"></a>
+          </div>
+          <div class=" item next">
+            <a href="https://google.com"><img src="https://i.ibb.co/tJRQstw/swansea-card-min.png"></a>
+          </div>
+
+          <div class="button-container">
+            <div class="button"><i class="fas fa-angle-left"></i></div>
+            <div class="button"><i class="fas fa-angle-right"></i></div>
+          </div>
         </div>
       </div>
     </section>
@@ -288,7 +306,9 @@
     </section>
 
     <footer>
-      <p class="michland-footer">Copyright <script>document.write(new Date().getFullYear())</script> Dorothys Showbar © </p>
+      <p class="michland-footer">Copyright <script>
+          document.write(new Date().getFullYear())
+        </script> Dorothys Showbar © </p>
     </footer>
 
   </section>
