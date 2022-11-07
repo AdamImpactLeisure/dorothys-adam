@@ -85,6 +85,9 @@ body{overflow: hidden !important}
   transform: scale(0);
   opacity: 0;
 }
+.bit-smaller{
+  max-width:21% ;
+}
 .slider-container .slider-content .slider-single .slider-single-download {
   position: absolute;
   display: block;
@@ -320,7 +323,7 @@ body{overflow: hidden !important}
 }
 @media (min-width: 160px) and (max-width: 410px) {
   .bit-smaller {
-    max-width: 63% !important;
+    max-width: 61% !important;
   }
   .slider-container .slider-content .slider-single .slider-single-image {
     max-width: 70%;
@@ -356,7 +359,7 @@ body{overflow: hidden !important}
 }
 @media (min-width: 471px) and (max-width: 550px) {
   .bit-smaller {
-    max-width: 63% !important;
+    max-width: 61% !important;
   }
   .slider-container .slider-content .slider-single .slider-single-image {
     max-width: 70%;
@@ -378,6 +381,9 @@ body{overflow: hidden !important}
   .why {
     max-width: 115% !important;
   }
+  .bit-smaller {
+    max-width: 60% !important;
+  }
 }
 @media (min-width: 651px) and (max-width: 750px) {
   .slider-container .slider-content .slider-single .slider-single-image {
@@ -388,6 +394,9 @@ body{overflow: hidden !important}
   }
   .why {
     max-width: 95% !important;
+  }
+  .bit-smaller {
+    max-width: 46% !important;
   }
 }
 @media (min-width: 751px) and (max-width: 850px) {
@@ -400,6 +409,9 @@ body{overflow: hidden !important}
   .why {
     max-width: 83% !important;
   }
+  .bit-smaller {
+    max-width: 41% !important;
+  }
 }
 @media (min-width: 851px) and (max-width: 950px) {
   .slider-container .slider-content .slider-single .slider-single-image {
@@ -411,10 +423,19 @@ body{overflow: hidden !important}
   .why {
     max-width: 65% !important;
   }
+  .bit-smaller {
+    max-width: 34% !important;
+  }
 }
 @media (min-width: 951px) and (max-width: 1050px) {
   .why {
     max-width: 45% !important;
+  }
+  .slider-container .slider-content .slider-single .slider-single-image {
+    max-width: 38%;
+  }
+  .bit-smaller {
+    max-width: 34% !important;
   }
 }
 @media (min-width: 1051px) and (max-width: 1150px) {
