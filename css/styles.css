@@ -51,7 +51,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   user-select: none;
+}
 
+.disco{
+  width: 100%;
+  padding-bottom:0;
+  margin-bottom: 0;
 }
 
 .items .item {
@@ -151,8 +156,142 @@ body {
     display:block;
   }
 }
+/* DISCO */
+
+@keyframes disco-ball-shimmer {
+	 0% {
+		 background-position: 0 0;
+	}
+	 100% {
+		 background-position: 40px 0;
+	}
+}
+ @keyframes disco-lights-bkgd {
+	 20% {
+		 background-color: rgba(115,173,66,0.15);
+	}
+	 40% {
+		 background-color: rgba(250,190,14,0.15);
+	}
+	 60% {
+		 background-color: rgba(1,101,131,0.15);
+	}
+	 80% {
+		 background-color: rgba(238,104,98,0.15);
+	}
+}
+ @keyframes disco-lights-mode-1 {
+	 0% {
+		 transform: rotate(90deg);
+	}
+	 100% {
+		 transform: rotate(-145deg);
+	}
+}
+ @keyframes disco-lights-mode-2 {
+	 0% {
+		 transform: rotate(-90deg);
+	}
+	 100% {
+		 transform: rotate(145deg);
+	}
+}
+ @keyframes disco-lights-mode-3 {
+	 0% {
+		 transform: rotate(0deg);
+	}
+	 100% {
+		 transform: rotate(165deg);
+	}
+}
+ @keyframes disco-lights-mode-4 {
+	 0% {
+		 transform: rotate(-135deg);
+	}
+	 100% {
+		 transform: rotate(135deg);
+	}
+}
+ body {
+	 margin: 0;
+}
+ .body {
+	 position: relative;
+	 /* width: 100%;
+	 height: 100vh; */
+
+	 /* overflow: hidden; */
+}
+ .body::before {
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 animation: disco-lights-bkgd 5s infinite;
+}
+ .disco-ball {
+	 position: relative;
+}
+ .disco-ball::before {
+	 content: '';
+	 position: absolute;
+	 z-index: 1;
+	 top: 20px;
+	 left: 20px;
+	 height: 40px;
+	 width: 40px;
+	 border-radius: 50%;
+	 background-color: silver;
+	 background-image: linear-gradient(90deg,transparent 0%,#fff 50%,transparent 100%);
+	 background-size: 40px;
+	 animation: disco-ball-shimmer 2s linear infinite;
+}
+ .strobe-light {
+	 position: relative;
+}
+ .strobe-light::before, .strobe-light::after {
+	 content: '';
+	 position: absolute;
+	 top: 10px;
+	 left: 40px;
+	 width: 0;
+	 height: 20px;
+	 border-right: 100vw solid #4444dd;
+	 border-top: 25px solid transparent;
+	 border-bottom: 25px solid transparent;
+	 border-radius: 0 50px 50px 0;
+	 transform-origin: left center;
+	 filter: drop-shadow(10px 0 5px #4444dd);
+	 animation: disco-lights-mode-1 2s infinite alternate linear;
+}
+ .strobe-light--1::before {
+	 border-right-color: rgba(115,173,66,0.4);
+	 filter: drop-shadow(10px 0 5px #73AD42);
+	 animation-duration: 1.5s;
+}
+ .strobe-light--1::after {
+	 border-right-color: rgba(238,104,98,0.4);
+	 filter: drop-shadow(10px 0 5px #EE6862);
+	 animation-name: disco-lights-mode-2;
+	 animation-duration: 1.5s;
+}
+ .strobe-light--2::before {
+	 border-right-color: rgba(250,190,14,0.4);
+	 filter: drop-shadow(10px 0 5px #FABE0E);
+	 animation-name: disco-lights-mode-3;
+	 animation-duration: 1.5s;
+}
+ .strobe-light--2::after {
+	 border-right-color: rgba(1,101,131,0.4);
+	 filter: drop-shadow(10px 0 5px #016583);
+	 animation-name: disco-lights-mode-4;
+	 animation-duration: 2s;
+}
 
 
+/* Disco ENDS */
 
 
 
