@@ -158,7 +158,7 @@ body {
 }
 /* DISCO */
 
-@keyframes disco-ball-shimmer {
+/* @keyframes disco-ball-shimmer {
 	 0% {
 		 background-position: 0 0;
 	}
@@ -217,12 +217,9 @@ body {
 }
  .body {
 	 position: relative;
-	 /* width: 100%;
-	 height: 100vh; */
 
-	 /* overflow: hidden; */
-}
- .body::before {
+} */
+ /* .body::before {
 	 content: '';
 	 position: absolute;
 	 top: 0;
@@ -288,7 +285,7 @@ body {
 	 filter: drop-shadow(10px 0 5px #016583);
 	 animation-name: disco-lights-mode-4;
 	 animation-duration: 2s;
-}
+} */
 
 
 /* Disco ENDS */
@@ -1380,7 +1377,7 @@ label span:hover {
   }
 
   .up {
-    margin-top:50px;
+    margin-top:15px;
     padding-bottom: 10px;
     font-size: 3em;
     line-height: 0.6;
